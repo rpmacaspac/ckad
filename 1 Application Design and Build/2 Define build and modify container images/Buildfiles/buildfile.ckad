@@ -9,7 +9,7 @@ RUN apt-get update -y
 RUN apt-get -y install nodejs npm curl
 
 # Copy app to /src
-COPY . /src
+COPY ./dev/ckad/*.js* /src
 
 WORKDIR /src
 
@@ -18,4 +18,4 @@ RUN npm install
 
 EXPOSE 8080
 
-ENTRYPOINT ["node", ".dev/ckad/app.js"]
+ENTRYPOINT ["node", "./app.js"]
