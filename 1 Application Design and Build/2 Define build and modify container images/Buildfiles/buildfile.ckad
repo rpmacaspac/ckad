@@ -9,7 +9,7 @@ RUN apt-get update -y
 RUN apt-get -y install nodejs npm curl
 
 # Copy app to /src
-COPY ./dev/ckad/*.js* /src
+COPY ../dev/ckad/*.js* /src
 
 WORKDIR /src
 
