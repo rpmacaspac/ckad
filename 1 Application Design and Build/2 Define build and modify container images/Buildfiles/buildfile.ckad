@@ -11,7 +11,7 @@ RUN apt-get -y install nodejs npm curl
 # Copy app to /src
 COPY ../dev/ckad/*.js* /src
 
-WORKDIR /src
+WORKDIR /src/dev/ckad
 
 # Install dependencies
 RUN npm install
