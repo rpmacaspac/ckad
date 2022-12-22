@@ -2,7 +2,7 @@
 # Linux x64
 FROM node:current-alpine
 
-LABEL maintainer="nigelpoulton@hotmail.com"
+# LABEL maintainer="nigelpoulton@hotmail.com"
 
 # Copy app to /src
 COPY . /src
